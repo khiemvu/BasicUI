@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:gravity="center" android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_Username"
+                android:id="@+id/tvUsername" android:layout_gravity="left|center_vertical"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername" android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Password"
+                android:id="@+id/tvPassword" android:layout_gravity="left|center_vertical"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword" android:layout_gravity="center" android:password="true"/>
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Login"
+                android:id="@+id/btLogin" android:layout_gravity="center" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

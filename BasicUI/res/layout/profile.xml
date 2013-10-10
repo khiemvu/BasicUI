@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@android:color/white">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_Username"
+                android:id="@+id/profile_tvUsername" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/black" android:padding="3dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Logout"
+                android:id="@+id/btLogout" android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/profile_tvUsername" android:background="@android:color/white"
+                android:textColor="#ffbd29"
+                android:padding="3dp"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+
+        <ImageView
+                android:layout_width="120dp"
+                android:layout_height="155dp"
+                android:id="@+id/imageView" android:layout_gravity="top"
+                android:src="@drawable/avatar" android:paddingLeft="3dp"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="80dp"
+                >
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Address"
+                        android:id="@+id/btAddress"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black" android:layout_alignParentLeft="true"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAddressResult"
+                        android:layout_toRightOf="@+id/btAddress"  android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Birthday"
+                        android:id="@+id/btBirthday"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black" android:layout_alignParentLeft="true"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvBirthdayResult"
+                        android:layout_toRightOf="@+id/btBirthday"  android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Online"
+                        android:id="@+id/btOnline"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black" android:layout_alignParentLeft="true"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvOnlineResult"
+                        android:layout_toRightOf="@+id/btOnline"  android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Gender"
+                        android:id="@+id/btGender"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black" android:layout_alignParentLeft="true"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvGenderResult"
+                        android:layout_toRightOf="@+id/btGender"  android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+            <RadioGroup
+                    android:id="@+id/rgbtGender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Male"
+                        android:id="@+id/rbtMale" android:textColor="@android:color/black"
+                        />
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Female"
+                        android:id="@+id/rbtFemale" android:textColor="@android:color/black"
+                        />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FriendList"
+            android:id="@+id/cbListFriend" android:layout_gravity="left|center_vertical"
+            android:textColor="@android:color/black" android:checked="false"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvFriend" android:background="#e3e3e3" android:layout_margin="5dp"/>
+</LinearLayout>

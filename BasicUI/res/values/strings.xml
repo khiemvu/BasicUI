@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BasicUI</string>
+    <string name="login_Username">UserName</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+
+    <string name="profile_Username">Hi, Khiem Vu</string>
+    <string name="Logout"><u>Logout</u></string>
+    <string name="Avatar">Avatar</string>
+    <string name="Address">Address:</string>
+    <string name="Birthday">BirthDay:</string>
+    <string name="Online">Online:</string>
+    <string name="Gender">Gender:</string>
+    <string name="AddressResult"></string>
+    <string name="BirthdayResult"></string>
+    <string name="OnlineResult"></string>
+    <string name="GenderResult"></string>
+    <string name="FriendList">Show friend list</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="UserName">android</string>
+
+    <string name="Black">#0A0A0A</string>
+
+</resources>
